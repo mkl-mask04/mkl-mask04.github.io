@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 50px;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: #555;
+}

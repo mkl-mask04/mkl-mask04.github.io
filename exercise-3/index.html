@@ -6,6 +6,11 @@
     <title>exercise 3</title>
   </head>
   <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
     header {
       background-color: black;
       height: 110px;
@@ -16,7 +21,8 @@
     footer {
       background-color: black;
       height: 110px;
-      margin-top: 50px;
+      position: fixed;
+      margin: auto;
     }
     .grid-container {
       display: grid;
@@ -26,16 +32,29 @@
       margin: 50px auto;
     }
     .card1 {
+      display: flex;
+      flex-direction: column;
       border-radius: 20px;
       background-color: #fff;
       box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     }
-    .image > img {
-      background-color: red;
+    .image {
       width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+      position: relative;
       border-radius: 20px 20px 0 0;
     }
-
+    .image > img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .content {
+      padding: 20px;
+    }
     @media (max-width: 800px) {
       .grid-container {
         grid-template-columns: 1fr;
@@ -50,34 +69,42 @@
           <img src="Assets/hershey_park.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
+          <h1>Hersheypark</h1>
+          <p>
+            A renowned amusement park featuring exciting rides, live
+            entertainment, and an opportunity to learn about chocolate-making at
+            Hershey's Chocolate World.
+          </p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="image">
+          <img src="Assets/gettysburg.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Gettysburg National Military Park</h1>
+          <p>
+            A renowned amusement park featuring exciting rides, live
+            entertainment, and an opportunity to learn about chocolate-making at
+            Hershey's Chocolate World.
+          </p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="image">
+          <img src="Assets/state_capitol.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Pennsylvania State Capitol</h1>
           <p>column1</p>
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/raystown_lake.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
-        </div>
-        <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
-        </div>
-        <div class="content">
-          <h1>header</h1>
+          <h1>Raystown Lake</h1>
           <p>column1</p>
         </div>
       </div>
