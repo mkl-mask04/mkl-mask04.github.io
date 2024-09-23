@@ -39,3 +39,13 @@ ul li a {
 ul li a:hover {
   background-color: #555;
 }
+
+.content {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.active {
+  background-color: #fff;
+  color: #333;
+}
