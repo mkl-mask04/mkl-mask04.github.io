@@ -13,158 +13,158 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-    h1 {
-      color: #a53f2b;
-      font-family: "Abril Fatface", serif;
-      font-weight: 400;
-      font-style: normal;
-      text-transform: capitalize;
-      font-size: 1.6vw;
-      padding-bottom: 8px;
-    }
-    p {
-      color: #0d1b1e;
-      font-family: "DM Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-size: 1.3vw;
-      line-height: 1.5;
-      margin-bottom: 5px;
-    }
-    header {
-      background-color: black;
-      height: 110px;
-    }
-    body {
-      margin: 0;
-    }
-    footer {
-      background-color: #7899d4;
-      height: 110px;
-      margin: auto;
-    }
-    footer > p {
-      font-size: 12px;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 110px;
-    }
-    .welcome {
-      max-width: 1200px;
-      position: relative;
-      margin: auto;
-      display: flex;
-      width: 65%;
-      text-align: center;
-    }
-    .welcome > img {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      border-radius: 0 0 20px 20px;
-      border: solid #fcff4b;
-      border-width: 0.5px;
-      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    }
-    .welcome > h1 {
-      font-size: 5vw;
-      color: white;
-      position: absolute;
-      top: 68%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-    }
-    .welcome > p {
-      font-size: 1.5vw;
-      color: white;
-      position: absolute;
-      top: 83%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 70%;
-    }
-    .grid-container {
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 50px;
-      width: 65%;
-      margin: 50px auto;
-    }
-    .card1 {
-      border: solid #fcff4b;
-      border-width: 0.5px;
-      display: flex;
-      flex-direction: column;
-      border-radius: 20px;
-      background-color: #fff;
-      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    }
-    .image {
-      border: solid #fcff4b;
-      border-width: 0.5px;
-      width: 100%;
-      padding-top: 56.25%;
-      overflow: hidden;
-      position: relative;
-      border-radius: 20px 20px 0 0;
-    }
-    .image > img {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-    }
-    .read_more {
-      margin-top: auto;
-      padding: 20px;
-    }
-    a {
-      color: #0d1b1e;
-      font-family: "DM Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-size: 14px;
-      text-decoration: none;
-      letter-spacing: 1.1px;
-      display: inline-block;
-    }
-    a:visited {
-      text-decoration: none;
-      opacity: 60%;
-      background-color: #a53f2b;
-    }
-    a:hover {
-      transform: scale(1.2);
-      transition: transform 0.3s;
-    }
-    @media (max-width: 800px) {
-      .grid-container {
-        grid-template-columns: 1fr;
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
       }
       h1 {
-        font-size: 20px;
-        padding-bottom: 5px;
+        color: #a53f2b;
+        font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: capitalize;
+        font-size: 1.6vw;
+        padding-bottom: 8px;
       }
       p {
-        font-size: 14px;
+        color: #0d1b1e;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 1.3vw;
+        line-height: 1.5;
+        margin-bottom: 5px;
       }
-    }
-  </style>
+      header {
+        background-color: black;
+        height: 110px;
+      }
+      body {
+        margin: 0;
+      }
+      footer {
+        background-color: #7899d4;
+        height: 110px;
+        margin: auto;
+      }
+      footer > p {
+        font-size: 12px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 110px;
+      }
+      .welcome {
+        max-width: 1200px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        width: 65%;
+        text-align: center;
+      }
+      .welcome > img {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        border: solid #fcff4b;
+        border-width: 0.5px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      }
+      .welcome > h1 {
+        font-size: 5vw;
+        color: white;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+      .welcome > p {
+        font-size: 1.5vw;
+        color: white;
+        position: absolute;
+        top: 83%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+      }
+      .grid-container {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        width: 65%;
+        margin: 50px auto;
+      }
+      .card1 {
+        border: solid #fcff4b;
+        border-width: 0.5px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      }
+      .image {
+        border: solid #fcff4b;
+        border-width: 0.5px;
+        width: 100%;
+        padding-top: 56.25%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px 20px 0 0;
+      }
+      .image > img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .read_more {
+        margin-top: auto;
+        padding: 20px;
+      }
+      a {
+        color: #0d1b1e;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1.1px;
+        display: inline-block;
+      }
+      a:visited {
+        text-decoration: none;
+        opacity: 60%;
+        background-color: #a53f2b;
+      }
+      a:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s;
+      }
+      @media (max-width: 800px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 20px;
+          padding-bottom: 5px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
   <body>
     <div class="welcome">
       <img src="Assets/state_capitol.jpg" alt="" />
