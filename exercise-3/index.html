@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>exercise 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style>
     * {
       box-sizing: border-box;
       padding: 0;
       margin: 0;
+    }
+    h1 {
+      color: #a53f2b;
+      font-family: "Abril Fatface", serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: capitalize;
+      font-size: 1.6vw;
+      padding-bottom: 8px;
+    }
+    p {
+      color: #0d1b1e;
+      font-family: "DM Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-size: 1.3vw;
+      line-height: 1.5;
+      margin-bottom: 5px;
     }
     header {
       background-color: black;
@@ -19,19 +43,62 @@
       margin: 0;
     }
     footer {
-      background-color: black;
+      background-color: #7899d4;
       height: 110px;
-      position: fixed;
       margin: auto;
     }
+    footer > p {
+      font-size: 12px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 110px;
+    }
+    .welcome {
+      max-width: 1200px;
+      position: relative;
+      margin: auto;
+      display: flex;
+      width: 65%;
+      text-align: center;
+    }
+    .welcome > img {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+      border: solid #fcff4b;
+      border-width: 0.5px;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    .welcome > h1 {
+      font-size: 5vw;
+      color: white;
+      position: absolute;
+      top: 68%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .welcome > p {
+      font-size: 1.5vw;
+      color: white;
+      position: absolute;
+      top: 83%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+    }
     .grid-container {
+      max-width: 1200px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 3%;
+      grid-gap: 50px;
       width: 65%;
       margin: 50px auto;
     }
     .card1 {
+      border: solid #fcff4b;
+      border-width: 0.5px;
       display: flex;
       flex-direction: column;
       border-radius: 20px;
@@ -39,6 +106,8 @@
       box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     }
     .image {
+      border: solid #fcff4b;
+      border-width: 0.5px;
       width: 100%;
       padding-top: 56.25%;
       overflow: hidden;
@@ -53,16 +122,55 @@
       transform: translate(-50%, -50%);
     }
     .content {
+      display: flex;
+      flex-direction: column;
       padding: 20px;
+    }
+    .read_more {
+      margin-top: auto;
+      padding: 20px;
+    }
+    .read_more > a {
+      color: #0d1b1e;
+      font-family: "DM Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: underline;
+      letter-spacing: 1.1px;
+      display: inline-block;
+    }
+    a:visited {
+      text-decoration: none;
+      opacity: 60%;
+    }
+    a:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s;
     }
     @media (max-width: 800px) {
       .grid-container {
         grid-template-columns: 1fr;
       }
+      h1 {
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
   </style>
   <body>
-    <header></header>
+    <div class="welcome">
+      <img src="Assets/state_capitol.jpg" alt="" />
+      <h1>Central Pennsylvania</h1>
+      <p>
+        Explore Central PA: Find the Top 10 Spots for a Memorable Trip. From
+        scenic parks to charming towns, see what Central Pennsylvania has to
+        offer!
+      </p>
+    </div>
     <div class="grid-container">
       <div class="card1">
         <div class="image">
@@ -76,6 +184,14 @@
             Hershey's Chocolate World.
           </p>
         </div>
+        <div class="read_more">
+          <a
+            href="https://www.hersheypark.com/info/about-us.php"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
+        </div>
       </div>
       <div class="card1">
         <div class="image">
@@ -84,10 +200,18 @@
         <div class="content">
           <h1>Gettysburg National Military Park</h1>
           <p>
-            A renowned amusement park featuring exciting rides, live
-            entertainment, and an opportunity to learn about chocolate-making at
-            Hershey's Chocolate World.
+            Site of the pivotal Battle of Gettysburg during the Civil War,
+            offering guided tours, historic monuments, and a visitor center with
+            exhibits.
           </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://www.nps.gov/gett/index.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
@@ -96,7 +220,19 @@
         </div>
         <div class="content">
           <h1>Pennsylvania State Capitol</h1>
-          <p>column1</p>
+          <p>
+            An impressive architectural gem in Harrisburg showcasing exquisite
+            artwork, stunning interiors, and guided tours to learn about the
+            state's government and history.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="http://www.pacapitol.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
@@ -105,64 +241,150 @@
         </div>
         <div class="content">
           <h1>Raystown Lake</h1>
-          <p>column1</p>
+          <p>
+            A scenic reservoir near Huntingdon, offering boating, fishing,
+            hiking, and camping amid picturesque landscapes and water
+            activities.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://raystown.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/railroad_museum.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
+          <h1>Railroad Museum of Pennsylvania</h1>
+          <p>
+            Located in Strasburg, this museum boasts an extensive collection of
+            vintage locomotives, rail cars, and exhibits, showcasing the rich
+            history of railroading.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://www.rrmuseumpa.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/central_market.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
+          <h1>Central Market York</h1>
+          <p>
+            The oldest continuously operating farmers' market in the U.S.,
+            offering a bustling atmosphere, local produce, crafts, and diverse
+            food vendors.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://www.centralmarketyork.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/furnace_stack.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
+          <h1>Pine Grove Furnance State Park</h1>
+          <p>
+            Serving as the "Gateway to the Appalachian Trail," this park offers
+            hiking, picnicking, and swimming opportunities, along with historic
+            features and natural beauty.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark/Pages/default.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/worlds_end.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
+          <h1>Worlds End State Park</h1>
+          <p>
+            Situated in the Endless Mountains, this park is known for its rugged
+            beauty, with hiking trails, waterfalls, and breathtaking views of
+            the Loyalsock Creek Gorge.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark/Pages/default.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/lewisburg.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
+          <h1>Lewisburg</h1>
+          <p>
+            A charming small town known for its historic downtown, offering
+            boutique shops, galleries, and restaurants, as well as attractions
+            like the Lewisburg Farmers Market and Packwood House Museum.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://www.lewisburgborough.org/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
       <div class="card1">
         <div class="image">
-          <img src="Assets/hershey_park.jpg" alt="" />
+          <img src="Assets/pa_grand_canyon.jpg" alt="" />
         </div>
         <div class="content">
-          <h1>header</h1>
-          <p>column1</p>
+          <h1>Pennsylvania Grand Canyon</h1>
+          <p>
+            Also known as Pine Creek Gorge, this natural wonder features
+            stunning vistas, hiking trails, and opportunities for outdoor
+            recreation.
+          </p>
+        </div>
+        <div class="read_more">
+          <a
+            href="https://pacanyon.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Learn More</a
+          >
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <p>Copyright © 2024 | All Rights Reserved</p>
+    </footer>
   </body>
 </html>
