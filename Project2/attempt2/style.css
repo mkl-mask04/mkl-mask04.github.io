@@ -32,7 +32,7 @@
 }
 
 .start-button:hover {
-  background-color: #ff7400;
+  background-color: rgba(171, 168, 168, 0.6);
 }
 
 .info-container {
