@@ -180,10 +180,6 @@ header {
   text-decoration: none;
 }
 
-.nav-title a:hover {
-  color: #ff7400;
-}
-
 .nav-dropdown {
   display: flex;
   align-items: stretch;
