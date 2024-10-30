@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #6a1b9a;
+  --secondary-color: #d81b60;
+  --text-light: #f3e5f5;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.carousel-item img {
+  filter: brightness(0.75);
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  color: #ffeb3b;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cast-list {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.review-card {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #4a148c;
+  color: var(--text-light);
+  padding: 2rem 0;
+  text-align: center;
+}
