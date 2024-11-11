@@ -11,14 +11,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Alice's Adventures: Purchase</title>
-    <style>
-      .main-page {
-        min-height: 900px;
-        @media only screen and (max-width: 767px) {
-          min-height: 1300px;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -46,48 +38,44 @@
       </nav>
     </header>
 
-    <div class="main"></div>
-    <section class="constraint-container">
-      <div class="constraint main-page">
-        <div class="right-side"></div>
-        <div class="left-side"></div>
-        <div class="content">
-          <div class="title">Purchase the Book Now</div>
-          <div class="hero">
-            <div class="welcome-image">
-              <img
-                src="assets/book-cover.png"
-                alt="alice-in-wonderland-book-cover"
-              />
-            </div>
-            <div class="text">
-              <h1>Purchase the Book from...</h1>
-              <div class="purchase-links">
-                <a class="link-button" id="amazon" href=""
-                  ><img src="assets/amazon.png" alt="amazon-link"
-                /></a>
-                <a class="link-button" id="goodreads" href=""
-                  ><img src="assets/goodreads.png" alt="goodreads-link"
-                /></a>
-                <a class="link-button" href=""
-                  ><img
-                    src="assets/google-books.png"
-                    id="google-books"
-                    alt="google-books-link"
-                /></a>
-                <a class="link-button" href=""
-                  ><img
-                    src="assets/barnes-nobles.png"
-                    id="barnes-nobles"
-                    alt="barnes-and-nobles-link"
-                /></a>
-              </div>
+    <div class="content">
+      <div class="right-side"></div>
+      <div class="left-side"></div>
+      <div class="stuff">
+        <div class="title">Purchase the Book Now</div>
+        <div class="purchase-hero">
+          <div class="welcome-image">
+            <img
+              src="assets/book-cover.png"
+              alt="alice-in-wonderland-book-cover"
+            />
+          </div>
+          <div class="text">
+            <h1>Purchase the Book from...</h1>
+            <div class="purchase-links">
+              <a class="link-button" id="amazon" href=""
+                ><img src="assets/amazon.png" alt="amazon-link"
+              /></a>
+              <a class="link-button" id="goodreads" href=""
+                ><img src="assets/goodreads.png" alt="goodreads-link"
+              /></a>
+              <a class="link-button" href=""
+                ><img
+                  src="assets/google-books.png"
+                  id="google-books"
+                  alt="google-books-link"
+              /></a>
+              <a class="link-button" href=""
+                ><img
+                  src="assets/barnes-nobles.png"
+                  id="barnes-nobles"
+                  alt="barnes-and-nobles-link"
+              /></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
