@@ -342,6 +342,14 @@ nav ul a.active {
   margin-left: 15rem;
 }
 
+#logo:hover {
+  transform: scale(1.5);
+}
+
+#logo {
+  transition-duration: 0.3s;
+}
+
 @media only screen and (max-width: 767px) {
   .hero {
     flex-direction: column;
