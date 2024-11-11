@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alice's Adventures: About</title>
+    <style>
+      .author-hero {
+        gap: 5rem;
+        align-items: start;
+      }
+      .text a {
+        width: 40%;
+      }
+      .main-page {
+        min-height: 1400px;
+        @media only screen and (max-width: 767px) {
+          min-height: 1700px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html" id="logo">Alice's Adventures in Wonderland</a>
+        <div class="hamburger" id="ham-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul id="nav-bar">
+          <li>
+            <a class="active">About</a>
+          </li>
+          <li>
+            <a href="author.html">Author</a>
+          </li>
+          <li>
+            <a href="reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="purchase.html">Purchase</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main"></div>
+    <section class="constraint-container">
+      <div class="constraint main-page">
+        <div class="right-side"></div>
+        <div class="left-side"></div>
+        <div class="content">
+          <div class="title">What's this Book About</div>
+          <div class="author-hero">
+            <div class="book-cover">
+              <img
+                src="assets/book-cover.png"
+                alt="alice-in-wonderland-book-cover"
+              />
+            </div>
+
+            <div class="text">
+              <p>
+                In "Alice's Adventures in Wonderland," young Alice follows a
+                white rabbit down a rabbit hole and finds herself in a peculiar
+                and enchanting world called Wonderland. Throughout her journey,
+                she encounters a series of eccentric and whimsical characters,
+                such as the Cheshire Cat, the Mad Hatter, and the Queen of
+                Hearts. Alice navigates through a topsy-turvy realm where logic
+                is often turned upside down, and nothing is as it seems. As she
+                tries to make sense of this extraordinary world and find her way
+                back home, Alice embarks on a delightful and sometimes
+                bewildering adventure, filled with curious encounters and
+                thought-provoking riddles. Along the way, she learns valuable
+                lessons about identity, imagination, and the power of embracing
+                one's curiosity.
+              </p>
+              <p style="font-weight: 100">
+                Genre: Children's Literature, Fantasy Fiction
+              </p>
+              <a class="link-button" href="purchase.html"
+                ><img src="assets/buy now.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="reviews">
+            <div>
+              <h1>Reviews</h1>
+            </div>
+            <div class="review-quotes">
+              <div>
+                <p>
+                  "Alice in Wonderland" by Lewis Carroll is a whimsical and
+                  enchanting tale that takes readers on a delightful journey
+                  through a world of absurdity and imagination. Carroll's
+                  storytelling is incredibly imaginative...
+                </p>
+              </div>
+              <div>
+                <p>
+                  The protagonist, Alice, is a curious and adventurous young
+                  girl who finds herself tumbling down a rabbit hole into a
+                  topsy-turvy world. Throughout her encounters with peculiar
+                  creatures like the Cheshire Cat, the Mad Hatter...
+                </p>
+              </div>
+            </div>
+            <a class="link-button" href="reviews.html"
+              ><img src="assets/author-link.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

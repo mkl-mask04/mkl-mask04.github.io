@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alice's Adventures: Purchase</title>
+    <style>
+      .main-page {
+        min-height: 900px;
+        @media only screen and (max-width: 767px) {
+          min-height: 1300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html" id="logo">Alice's Adventures in Wonderland</a>
+        <div class="hamburger" id="ham-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul id="nav-bar">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="author.html">Author</a>
+          </li>
+          <li>
+            <a href="reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a class="active">Purchase</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main"></div>
+    <section class="constraint-container">
+      <div class="constraint main-page">
+        <div class="right-side"></div>
+        <div class="left-side"></div>
+        <div class="content">
+          <div class="title">Purchase the Book Now</div>
+          <div class="hero">
+            <div class="welcome-image">
+              <img
+                src="assets/book-cover.png"
+                alt="alice-in-wonderland-book-cover"
+              />
+            </div>
+            <div class="text">
+              <h1>Purchase the Book from...</h1>
+              <div class="purchase-links">
+                <a class="link-button" id="amazon" href=""
+                  ><img src="assets/amazon.png" alt="amazon-link"
+                /></a>
+                <a class="link-button" id="goodreads" href=""
+                  ><img src="assets/goodreads.png" alt="goodreads-link"
+                /></a>
+                <a class="link-button" href=""
+                  ><img
+                    src="assets/google-books.png"
+                    id="google-books"
+                    alt="google-books-link"
+                /></a>
+                <a class="link-button" href=""
+                  ><img
+                    src="assets/barnes-nobles.png"
+                    id="barnes-nobles"
+                    alt="barnes-and-nobles-link"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
