@@ -342,11 +342,11 @@ nav ul a.active {
   margin-left: 15rem;
 }
 
-#logo:hover {
+a#logo:hover {
   transform: scale(1.5);
 }
 
-#logo {
+a#logo {
   transition-duration: 0.3s;
 }
 
