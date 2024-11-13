@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 1920px;
 }
 html {
   font-size: 62.5%;
@@ -42,7 +43,7 @@ nav ul {
   gap: 2rem;
 }
 nav a {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   text-decoration: none;
 }
 nav a#logo {
@@ -51,7 +52,7 @@ nav a#logo {
   color: #fde7c9;
 }
 nav ul a {
-  font-size: 1.2vw;
+  font-size: 2rem;
   color: #fde7c9;
 }
 nav ul a:hover {
@@ -87,6 +88,12 @@ nav ul a.active {
   header {
     padding: 2rem 12rem;
   }
+  nav ul a {
+    font-size: 1.5rem;
+  }
+  nav a {
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   html {
@@ -118,7 +125,7 @@ nav ul a.active {
     padding-top: 40px;
   }
   nav ul a {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 
@@ -142,6 +149,8 @@ nav ul a.active {
   align-items: center;
   height: 100%;
   background-repeat: repeat-y;
+  background-size: 1500px;
+  background-color: #8a5529;
 }
 
 .stuff {
@@ -212,6 +221,13 @@ nav ul a.active {
   width: 100%;
   margin-top: 10rem;
   align-items: center;
+}
+
+.purchase-image {
+  width: 80%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .author-hero {
